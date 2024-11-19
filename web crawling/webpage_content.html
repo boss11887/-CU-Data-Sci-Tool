@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+</html>
+<head>
+ <title>
+  Grader
+ </title>
+ <link href="/assets/application-e85a72d579dbf38ccbfcf8b3bd71d184c6113d323a23c5209d3b0256e03d6617.css" media="all" rel="stylesheet"/>
+ <link href="/assets/main-04024382391bb910584145d8113cf35ef376b55d125bb4516cebeb14ce788597.css" media="all" rel="stylesheet"/>
+ <meta content="authenticity_token" name="csrf-param"/>
+ <meta content="3LJqjmfdzjEJV9yZYL4oPwtHghDPo-T-j8oX6nrx0Mmj2zi0rvNYMOozJfFkUzpSHkC9g-TGiqy7XsrHUBnVBA" name="csrf-token"/>
+ <script src="/assets/my_app-eef7fa2865f4ee722ef08584a60346ab91e53487e80e4a96fa13c38b725a06b3.js">
+ </script>
+ <script data-turbo-track="reload" type="importmap">
+  {
+  "imports": {
+    "application": "/assets/application-749fa98b8995be2cdc411feb75a1aeb24805c80e001f52bfbcea15aaaa13cc82.js",
+    "prepend_jquery": "/assets/prepend_jquery-def10a9cf4361dcfd994aa4e41c82c8b22c36fb45f307732d56ff188aa0d1a14.js",
+    "jszip": "/assets/jszip.min-63af97540a7d2d53a75f3073b7ff8c61ab7ca43eeeed6d754328d9f67fb69c3f.js",
+    "pdfmake": "/assets/pdfmake-a7ecb8126abf0c28a2fe81229ae2372dd375ea40870d523b826820dacdae048b.js",
+    "pdfmake-vfs": "/assets/datatables/pdfmake-0.1.36/vfs_fonts-77a3c8ea8b5f686c09db7955f23b0aba777a7c8b81f21fe1d79bdf5a3ff3082a.js",
+    "datatables-bundle": "/assets/datatables/datatables-f120e5e34c008543e245ed6bc4fb332fbb6cc58e7396ed2eff94aaafca66efdd.js",
+    "datatables": "/assets/datatables/DataTables-1.12.1/js/jquery.dataTables-d08dba870860116921822818aa600ae15bf30e1bcccfebabf8f1c400a4b56a0d.js",
+    "datatables-bs5": "/assets/datatables/DataTables-1.12.1/js/dataTables.bootstrap5-5175887cf46da20281226100b80a3509966f7d9d2e579652d340ae1b44122b72.js",
+    "datatables-editor": "/assets/datatables/Editor-2.0.9/js/dataTables.editor-991551ef38f3be5a37a510a607c2047766924575f0ff0704731b8d4a3552f18f.js",
+    "datatables-editor-bs5": "/assets/datatables/Editor-2.0.9/js/editor.bootstrap5.min-0e3ed599faecb0e483e546693d858775989756ce13522f145a0fa0e449fb506e.js",
+    "datatables-autofill": "/assets/datatables/AutoFill-2.4.0/js/dataTables.autoFill-47aaf133d8b46728a0fb517111a133ad87ef3beceafc1a254f982124a90a4e53.js",
+    "datatables-autofill-bs5": "/assets/datatables/AutoFill-2.4.0/js/autoFill.bootstrap5-8e496386e290843c21b3020d6f6db9beb00dc22fa3b55c37706808010766a32f.js",
+    "datatables-button": "/assets/datatables/Buttons-2.2.3/js/dataTables.buttons-af62d78f6e59d49fdd689a80e62c71594b94660ebbc1bec0e98f1f27d197af3d.js",
+    "datatables-button-bs5": "/assets/datatables/Buttons-2.2.3/js/buttons.bootstrap5-f391275d7b5daff167567c2d37904af180a9101cd5f6d804b8bd275d473ac9fd.js",
+    "datatables-button-colvis": "/assets/datatables/Buttons-2.2.3/js/buttons.colVis-7912c4d76b1c8636a48ed95bee564671e3153fee44232eb0e7a96906ce44c0c1.js",
+    "datatables-button-html5": "/assets/datatables/Buttons-2.2.3/js/buttons.html5-47639902c570c5ae8a619335b1e282e12778efc22fd27eb9e7cb198677f68312.js",
+    "datatables-button-print": "/assets/datatables/Buttons-2.2.3/js/buttons.print-4f16e8d1f132a36a5ce4f42e49c514c6000a264bacc3b4799de919a037850ff9.js",
+    "datatables-colrecorder": "/assets/datatables/ColReorder-1.5.6/js/dataTables.colReorder-9c591b86a126be726406d8d03bd3e77be9b8d828de1e9122ebc85151ed04821c.js",
+    "datatables-datetime": "/assets/datatables/DateTime-1.1.2/js/dataTables.dateTime-ab9f7402a352d17be2a542a1c197d5834563dc82f745f5f6da9eab1d8758ef76.js",
+    "datatables-fixedcolumns": "/assets/datatables/FixedColumns-4.1.0/js/dataTables.fixedColumns-33c352ad6d90c128e94f8ae1e657f7ab0e3b86c3dab2ac3cfa0616d3eeca6864.js",
+    "datatables-fixedheader": "/assets/datatables/FixedHeader-3.2.4/js/dataTables.fixedHeader-223398e03054b167184a57a63fd893a31033e7c5b552bd9f5f48c98453efb06e.js",
+    "datatables-keytable": "/assets/datatables/KeyTable-2.7.0/js/dataTables.keyTable-e4bbcd28dfe294c77df560ffaeaa4cdd37f9275f381dfac67322877226cdfe1e.js",
+    "datatables-responsive": "/assets/datatables/Responsive-2.3.0/js/dataTables.responsive-ba565534ae699d383b15abf84eb1801eadc2f7aa2b5e5d7f8ae401143816bd06.js",
+    "datatables-responsive-bs5": "/assets/datatables/Responsive-2.3.0/js/responsive.bootstrap5-ecd95c37d0b73d3858e380ed0c8e6fb274b09d705c9f1fefded6e098f70b1293.js",
+    "datatables-rowgroup": "/assets/datatables/RowGroup-1.2.0/js/dataTables.rowGroup-70eb457e665320b9fa17dc644df8f7ea2e066a8abd587282a3e5a76dff134154.js",
+    "datatables-rowreorder": "/assets/datatables/RowReorder-1.2.8/js/dataTables.rowReorder-d15476fd74e96d39f05e9dc1dccafd4f9d0133583a281990873d5034416f1e9e.js",
+    "datatables-scroller": "/assets/datatables/Scroller-2.0.7/js/dataTables.scroller-d1c48c31f8594a3dad54b07f84260b7f78295c9c7eccc3ef3a7f382424961a63.js",
+    "datatables-searchbuilder": "/assets/datatables/SearchBuilder-1.3.4/js/dataTables.searchBuilder-c236e11ab05bb14c9665f09d87cea2ae166937e2b2f64ac5ecc30da215412e61.js",
+    "datatables-searchbuilder-bs5": "/assets/datatables/SearchBuilder-1.3.4/js/searchBuilder.bootstrap5-cc5e2214a79e3f968a5d19048a28ddf287b19c7e3dbb36c13ceb08687af33b84.js",
+    "datatables-searchpanes": "/assets/datatables/SearchPanes-2.0.2/js/dataTables.searchPanes-37ff86c0f8d06f5fc8cd7584facbc078aa414135831168a4430de36f795990ce.js",
+    "datatables-searchpanes-bs5": "/assets/datatables/SearchPanes-2.0.2/js/searchPanes.bootstrap5-c868b9888ca31ce30052575eb77af540fbf7c7da795e72d3627ac1e5d83a3e15.js",
+    "datatables-select": "/assets/datatables/Select-1.4.0/js/dataTables.select-8698fc7581fcd00ea906ad31d6a2069ccf58d8f559a736b39eac36ec0ee930b3.js",
+    "datatables-staterestore": "/assets/datatables/StateRestore-1.1.1/js/dataTables.stateRestore-c34c224855b15d767318692fbfe2d5a64dfc8a4ee0fdf4760c8cfc3f2352dea3.js",
+    "datatables-staterestore-bs5": "/assets/datatables/StateRestore-1.1.1/js/stateRestore.bootstrap5-499a1024023bc59254597a7532ffe9f966bdfb415b47bcb86fca49a450f758c0.js",
+    "select2": "/assets/select2.min-79da6ba9675930db638cf9590a381f74fe7c96abae352665b17ff918169ce121.js",
+    "custom": "/assets/custom-2f5f760c71003b1458edc48aa6aa577635e46b37e4dfb4c58daec4067126d100.js",
+    "chart": "/assets/chart.umd-0e342e5a1d63e9d2e6e129f1563095dfb635434c67a347b7283cf5d315afd69d.js",
+    "tempus-dominus-esm": "/assets/tempus-dominus/tempus-dominus.esm-3043f1706165589901adac2acd8e8c333939be206fac7619a37b6a745a1823f9.js",
+    "tempus-dominus-js": "/assets/tempus-dominus/tempus-dominus-0e737a637a1c72f6b3977789e7a3e0302116e588f134319ae0274f9731545d37.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-d03cf1dff41d6c5698ec2c5d6a501615a7a33754dbeef8d1edd31c928d17c652.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-eef6d0d72563b8765529b3f72bffff1fb8dcdd7f6a0eb025a2478c06e030d1cf.js",
+    "controllers/application": "/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js",
+    "controllers/hello_controller": "/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js",
+    "controllers": "/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js"
+  }
+}
+ </script>
+ <link href="/assets/stimulus.min-d03cf1dff41d6c5698ec2c5d6a501615a7a33754dbeef8d1edd31c928d17c652.js" rel="modulepreload"/>
+ <link href="/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js" rel="modulepreload"/>
+ <link href="/assets/turbo.min-eef6d0d72563b8765529b3f72bffff1fb8dcdd7f6a0eb025a2478c06e030d1cf.js" rel="modulepreload"/>
+ <script async="async" data-turbo-track="reload" src="/assets/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js">
+ </script>
+ <script type="module">
+  import "application"
+ </script>
+ <meta content="width=device-width, initial-scale=1" name="viewport"/>
+ <link href="https://fonts.googleapis.com" rel="preconnect"/>
+ <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+</head>
+<body>
+ <!-- = content_tag(:p,flash[:notice],class: 'alert alert-success') if flash[:notice]!=nil -->
+ <div class="container-fluid" id="main-content">
+  <div class="alert alert-dismissible my-2 fade show alert-danger">
+   You need to log in
+   <button class="btn-close" data-bs-dismiss="alert" type="button">
+   </button>
+  </div>
+  <h1>
+   Grader
+  </h1>
+  <div class="row mt-4">
+   <div class="col-md-6 col-sm-12">
+   </div>
+   <div class="col-lg-4 col-md-6 col-sm-12" style="padding-left: 20px;">
+    <div class="card">
+     <div class="card-body">
+      <div class="card-title">
+       <h3>
+        Welcome!
+       </h3>
+      </div>
+      <div class="card-subtitle">
+       Please login to see the problem list
+      </div>
+      <div class="card">
+       <div class="card-body" style="background: #eeeeff;">
+        <form accept-charset="UTF-8" action="/login/login" method="post">
+         <input autocomplete="off" name="authenticity_token" type="hidden" value="BwFvsLHCDSdvlKZeLWvH2vH0T5oFNk7ScoFUtMTrPlhDY9Cz4DGWIxp7u0CINa7BtObPrzJ0_yN_eHvhE_fl1g"/>
+         <div class="mb-3">
+          <label class="form-label" for="login">
+           Login
+          </label>
+          <input class="form-control" id="login" name="login" type="text"/>
+         </div>
+         <div class="mb-3">
+          <label class="form-label" for="password">
+           Password
+          </label>
+          <input class="form-control" id="password" name="password" type="password"/>
+         </div>
+         <div class="mb-3">
+          <div class="col-sm-offset-3 col-sm-9">
+           <input class="btn btn-primary" data-disable-with="Login" name="commit" type="submit" value="Login"/>
+          </div>
+         </div>
+        </form>
+       </div>
+      </div>
+      <br/>
+     </div>
+    </div>
+    current ip is 171.6.22.54
+   </div>
+  </div>
+ </div>
+ <turbo-frame data-turbo="true" id="toast_main">
+  <div class="toast-container position-fixed top-0 end-0 p-3" id="toast-area">
+   <!-- place holder -->
+  </div>
+ </turbo-frame>
+</body>
